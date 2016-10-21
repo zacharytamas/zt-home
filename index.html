@@ -58,12 +58,11 @@
         }
       })();
 
-      // TODO(zachary) Add service workers
-      /* if ('serviceWorker' in navigator) {
+      if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
           navigator.serviceWorker.register('/service-worker.js');
         });
-      } */
+      }
     </script>
 
     <link rel="import" href="/src/zt-home.html">
