@@ -1,0 +1,12 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/zt-home.html",
+  "fragments": [
+    "src/pages/front-page.html",
+    "src/pages/404-page.html"
+  ],
+  "includeDependencies": [
+    "manifest.json",
+    "bower_components/webcomponentsjs/webcomponents-lite.min.js"
+  ]
+}

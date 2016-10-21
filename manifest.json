@@ -1,0 +1,7 @@
+{
+  "name": "zt-home",
+  "short_name": "zt-home",
+  "description": "The Internet Home of Zachary Jones.",
+  "start_url": "/",
+  "display": "standalone"
+}
