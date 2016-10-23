@@ -1,5 +1,9 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
+<link rel="import" href="../components/tile-grid.html">
+<link rel="import" href="../components/content-tile.html">
+
+
 <dom-module id="zt-front-page">
   <template>
     <style>
@@ -7,26 +11,42 @@
         display: block;
         padding: 20px;
       }
+
+      h2 {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 600;
+      }
+
+      p {
+        margin: 0.5em 0;
+        color: rgba(0, 0, 0, .76);
+      }
+
+      p b {
+        font-weight: 700;
+      }
     </style>
 
-    <h1>Welcome to my humble abode online.</h1>
+    <h2>Hi, I'm Zachary.</h2>
+    <p><b>I'm an Atlanta-based software developer and entrepreneur.</b>
+       I'm interested in all sorts of things, including education and machine learning.</p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit impedit, tenetur nemo repellendus consectetur, beatae quas dolor molestias repudiandae velit iusto voluptatibus, aperiam mollitia magnam eaque hic, quos veritatis.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit impedit, tenetur nemo repellendus consectetur, beatae quas dolor molestias repudiandae velit iusto voluptatibus, aperiam mollitia magnam eaque hic, quos veritatis.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit impedit, tenetur nemo repellendus consectetur, beatae quas dolor molestias repudiandae velit iusto voluptatibus, aperiam mollitia magnam eaque hic, quos veritatis.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit impedit, tenetur nemo repellendus consectetur, beatae quas dolor molestias repudiandae velit iusto voluptatibus, aperiam mollitia magnam eaque hic, quos veritatis.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit impedit, tenetur nemo repellendus consectetur, beatae quas dolor molestias repudiandae velit iusto voluptatibus, aperiam mollitia magnam eaque hic, quos veritatis.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit impedit, tenetur nemo repellendus consectetur, beatae quas dolor molestias repudiandae velit iusto voluptatibus, aperiam mollitia magnam eaque hic, quos veritatis.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit impedit, tenetur nemo repellendus consectetur, beatae quas dolor molestias repudiandae velit iusto voluptatibus, aperiam mollitia magnam eaque hic, quos veritatis.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit impedit, tenetur nemo repellendus consectetur, beatae quas dolor molestias repudiandae velit iusto voluptatibus, aperiam mollitia magnam eaque hic, quos veritatis.</p>
+    <tile-grid>
+      <content-tile>
+        Some stuff.
+      </content-tile>
+
+      <content-tile>
+        Some stuff 2
+      </content-tile>
+    </tile-grid>
 
   </template>
 
   <script>
     Polymer({
-
       is: 'zt-front-page',
-
     });
   </script>
 </dom-module>

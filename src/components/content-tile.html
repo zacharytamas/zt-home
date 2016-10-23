@@ -1,0 +1,46 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+
+
+<dom-module id="content-tile">
+<template>
+  <style>
+    :host {
+      display: block;
+      width: 100%;
+      max-width: 320px;
+    }
+
+    paper-card {
+      width: 100%;
+    }
+
+  </style>
+
+  <paper-card id="card" image="" elevation="1" animated-shadow="true">
+    <div class="card-content">
+      <content></content>
+    </div>
+  </paper-card>
+
+</template>
+
+<script>
+  Polymer({
+    is: 'content-tile',
+
+    properties: {
+
+    },
+
+    attached: function() {
+
+    },
+
+    detached: function() {
+
+    }
+  });
+</script>
+</dom-module>

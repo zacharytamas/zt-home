@@ -1,0 +1,34 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
+
+
+<dom-module id="tile-grid">
+<template>
+  <style>
+    :host {
+      display: block;
+    }
+
+    #gridContainer {
+      @apply(--layout-horizontal);
+      @apply(--layout-wrap);
+      @apply(--layout-start-justified);
+    }
+
+    #gridContainer > ::content > * {
+      margin: 8px 0;
+    }
+
+  </style>
+
+  <div id="gridContainer" class="">
+    <content></content>
+  </div>
+
+</template>
+<script>
+  Polymer({
+    is: 'tile-grid',
+  });
+</script>
+</dom-module>
